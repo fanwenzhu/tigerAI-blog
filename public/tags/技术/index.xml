@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>技术 on 老虎AI探索</title>
+        <link>http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/</link>
+        <description>Recent content in 技术 on 老虎AI探索</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Mon, 19 Feb 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%8A%80%E6%9C%AF/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>欢迎来到老虎AI探索</title>
+        <link>http://localhost:1313/posts/welcome/</link>
+        <pubDate>Mon, 19 Feb 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/posts/welcome/</guid>
+        <description>&lt;h2 id=&#34;欢迎来到老虎ai探索&#34;&gt;欢迎来到老虎AI探索
+&lt;/h2&gt;&lt;p&gt;你好！欢迎来到老虎AI探索博客。这是一个专注于分享AI技术与应用的个人博客站点。在这里，我们将一起探索人工智能的无限可能。&lt;/p&gt;
+&lt;h3 id=&#34;我们会分享什么&#34;&gt;我们会分享什么？
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;AI技术最新动态&lt;/li&gt;
+&lt;li&gt;实用的AI应用案例&lt;/li&gt;
+&lt;li&gt;AI开发教程与经验&lt;/li&gt;
+&lt;li&gt;AI工具使用指南&lt;/li&gt;
+&lt;li&gt;AI产品评测与分析&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;为什么选择这个博客&#34;&gt;为什么选择这个博客？
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;专业的技术分享&lt;/li&gt;
+&lt;li&gt;实用的应用案例&lt;/li&gt;
+&lt;li&gt;清晰的教程指导&lt;/li&gt;
+&lt;li&gt;持续的内容更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;如何参与交流&#34;&gt;如何参与交流？
+&lt;/h3&gt;&lt;p&gt;欢迎通过以下方式参与交流：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;在文章下方留言评论&lt;/li&gt;
+&lt;li&gt;关注我们的社交媒体&lt;/li&gt;
+&lt;li&gt;订阅博客更新&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;让我们一起在AI的海洋中探索，发现更多精彩！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

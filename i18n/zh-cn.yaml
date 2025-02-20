@@ -1,0 +1,4 @@
+search:
+    title: "搜索"
+    placeholder: "输入关键词..."
+    resultTitle: "找到 #PAGES_COUNT 个相关结果" 
