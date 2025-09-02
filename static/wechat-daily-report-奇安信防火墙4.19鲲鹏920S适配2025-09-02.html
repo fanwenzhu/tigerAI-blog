@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇安信防火墙4.19鲲鹏920S适配 - 2025-08-29至2025-09-02</title>
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" xintegrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoVBL5rLesXWW/sGuLhYFChxgYnz2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+    <style>
+        /* 样式内容保持不变 */
+    </style>
+</head>
+<body>
+    <div id="report-content-wrapper">
+        <div class="grid-container">
+            <div class="card main-card">
+                <h1>奇安信防火墙4.19鲲鹏920S适配</h1>
+                <div class="date">2025-08-29至2025-09-02</div>
+                <div class="meta-info">
+                    <span><i class="fas fa-comment"></i> 消息数: 45+</span>
+                    <span><i class="fas fa-users"></i> 活跃用户: 5+</span>
+                    <span><i class="fas fa-fire"></i> 热点话题: 3</span>
+                </div>
+                <p class="summary">本群主要讨论了奇安信防火墙4.19内核在鲲鹏920S上的适配问题，包括内核补丁打不上、系统安装、CPU加压测试等问题。麒麟团队和客户团队进行了深入的技术交流。</p>
+                <i class="fas fa-microchip card-icon"></i>
+            </div>
+            <div class="topic-cards-wrapper">
+                <div class="card topic-card">
+                    <div class="topic-card-content-wrapper">
+                        <h2><i class="fas fa-lightbulb"></i> 内核补丁适配问题</h2>
+                        <div class="topic-category">技术适配</div>
+                        <p>关于<span class="highlight-keyword">内核补丁</span>的讨论，特别是<span class="highlight-name">@在路上</span>提到的<span class="highlight-keyword">irq-gic-v3-its.c</span>文件补丁打不上的问题。</p>
+                        <div class="topic-keywords">
+                            <span class="keyword">irq-gic-v3-its.c</span>
+                            <span class="keyword">内核补丁</span>
+                            <span class="keyword">2020年内核</span>
+                        </div>
+                        <div class="topic-mentions">
+                            <i class="fas fa-bullhorn"></i> 提及次数: 12
+                        </div>
+                    </div>
+                    <i class="fas fa-tools card-icon"></i>
+                </div>
+                <div class="card topic-card">
+                    <div class="topic-card-content-wrapper">
+                        <h2><i class="fas fa-rocket"></i> 系统安装与引导</h2>
+                        <div class="topic-category">系统部署</div>
+                        <p><span class="highlight-name">@麒麟-张玉</span>分享了<span class="highlight-keyword">openEuler系统</span>的安装问题，包括<span class="highlight-keyword">串口安装</span>和<span class="highlight-keyword">U盘引导</span>。</p>
+                        <div class="topic-keywords">
+                            <span class="keyword">openEuler</span>
+                            <span class="keyword">串口安装</span>
+                            <span class="keyword">U盘引导</span>
+                        </div>
+                        <div class="topic-mentions">
+                            <i class="fas fa-bullhorn"></i> 提及次数: 8
+                        </div>
+                    </div>
+                    <i class="fas fa-star card-icon"></i>
+                </div>
+                <div class="card topic-card">
+                    <div class="topic-card-content-wrapper">
+                        <h2><i class="fas fa-comments-dollar"></i> CPU加压测试</h2>
+                        <div class="topic-category">性能测试</div>
+                        <p>大家对<span class="highlight-keyword">CPU加压测试</span>的<span class="highlight-keyword">结果异常</span>进行了探讨，<span class="highlight-name">@麒麟-张玉</span>提出了测试脚本和结果分析。</p>
+                        <div class="topic-keywords">
+                            <span class="keyword">CPU加压</span>
+                            <span class="keyword">性能测试</span>
+                            <span class="keyword">top问题</span>
+                        </div>
+                        <div class="topic-mentions">
+                            <i class="fas fa-bullhorn"></i> 提及次数: 6
+                        </div>
+                    </div>
+                    <i class="fas fa-comments card-icon"></i>
+                </div>
+            </div>
+            <div class="mindmap-card-container card">
+                <div class="mindmap-card">
+                    <h2><i class="fas fa-sitemap"></i> 核心概念关系图</h2>
+                    <div class="mindmap-controls">
+                        <button id="zoomInBtn"><i class="fas fa-search-plus"></i> 放大</button>
+                        <button id="zoomOutBtn"><i class="fas fa-search-minus"></i> 缩小</button>
+                        <button id="downloadDiagramBtn"><i class="fas fa-download"></i> 下载导图</button>
+                        <button id="fullscreenOpenBtn" class="fullscreen-toggle-btn"><i class="fas fa-expand"></i> 全屏</button>
+                    </div>
+                    <div class="mermaid-container" id="mainMermaidContainer">
+                        <div class="mermaid" id="mindmapDiagram">
+                            mindmap
+                                root((奇安信防火墙适配))
+                                    内核补丁适配
+                                        irq-gic-v3-its.c
+                                        2020年内核
+                                    系统安装与引导
+                                        openEuler系统
+                                        串口安装
+                                        U盘引导
+                                    CPU加压测试
+                                        测试脚本
+                                        top问题
+                        </div>
+                    </div>
+                    <div id="mermaid-main-feedback-message"></div>
+                    <i class="fas fa-project-diagram card-icon"></i>
+                </div>
+            </div>
+            <div class="card quote-card">
+                <h2><i class="fas fa-quote-left"></i> 精彩引用</h2>
+                <div class="quote">
+                    "你们的代码是什么时间的？"
+                    <div class="quote-author">- @麒麟-张玉</div>
+                </div>
+                <div class="quote">
+                    "用串口界面安装"
+                    <div class="quote-author">- @在路上</div>
+                </div>
+                <div class="quote">
+                    "怀疑是系统问题？"
+                    <div class="quote-author">- @麒麟-张玉</div>
+                </div>
+                <i class="fas fa-comment-dots card-icon"></i>
+            </div>
+            <div class="card links-card">
+                <h2><i class="fas fa-link"></i> 重要链接与资源</h2>
+                <div class="link-item">
+                    <a href="http:///file/e7a1c87cfc53bed547f25cf7864c3b26" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span class="link-title">irq-gic-v3-its.c</span>
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a href="http:///file/2075187bb987de53759ed05692615ae8" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span class="link-title">irq-gic-v3-its.c</span>
+                    </a>
+                </div>
+                <div class="link-item">
+                    <a href="http:///file/e297bba854212cb617a31015bcbd90c2" target="_blank">
+                        <i class="fas fa-external-link-alt link-icon"></i>
+                        <span class="link-title">top问题验证.wps</span>
+                    </a>
+                </div>
+                <i class="fas fa-share-alt card-icon"></i>
+            </div>
+            <div class="card stats-card">
+                <h2><i class="fas fa-chart-line"></i> 活跃之星</h2>
+                <table class="user-stats-table">
+                    <thead>
+                        <tr>
+                            <th class="user-name-col">用户</th>
+                            <th class="message-count-col">发言数</th>
+                            <th class="contribution-col">主要贡献</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-label="用户" class="user-name-col">@麒麟-张玉</td>
+                            <td data-label="发言数" class="message-count-col">18+</td>
+                            <td data-label="主要贡献" class="contribution-col">主要负责内核补丁测试和系统安装问题解决</td>
+                        </tr>
+                        <tr>
+                            <td data-label="用户" class="user-name-col">@在路上</td>
+                            <td data-label="发言数" class="message-count-col">10+</td>
+                            <td data-label="主要贡献" class="contribution-col">提供原始内核代码和补丁应用问题反馈</td>
+                        </tr>
+                        <tr>
+                            <td data-label="用户" class="user-name-col">@Austin Quan</td>
+                            <td data-label="发言数" class="message-count-col">8+</td>
+                            <td data-label="主要贡献" class="contribution-col">提供系统安装建议和测试指导</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <i class="fas fa-user-friends card-icon"></i>
+            </div>
+            <div class="card wordcloud-card">
+                <h2><i class="fas fa-cloud"></i> 词云</h2>
+                <div class="wordcloud">
+                    <span class="wordcloud-item size-5">内核</span>
+                    <span class="wordcloud-item size-5">补丁</span>
+                    <span class="wordcloud-item size-4">openEuler</span>
+                    <span class="wordcloud-item size-4">测试</span>
+                    <span class="wordcloud-item size-3">系统</span>
+                    <span class="wordcloud-item size-3">安装</span>
+                    <span class="wordcloud-item size-2">CPU</span>
+                    <span class="wordcloud-item size-2">加压</span>
+                    <span class="wordcloud-item size-1">串口</span>
+                </div>
+                <i class="fas fa-tags card-icon"></i>
+            </div>
+        </div>
+        <div class="footer">
+            <p>数据来源：奇安信防火墙4.19鲲鹏920S适配群聊记录 | 生成日期：2025-09-02 | 统计周期：2025-08-29至2025-09-02</p>
+            <p>由 老虎聊AI 制作 | © 2025 老虎聊AI | 智能群聊分析工具 | 本报告由AI自动生成，仅供参考</p>
+        </div>
+    </div>
+    <div class="action-buttons-container">
+        <button id="viewPreviousReportBtn" class="action-button"><i class="fas fa-calendar-alt"></i> 查看昨日日报</button>
+        <button id="screenshotToClipboardBtn" class="action-button"><i class="fas fa-clipboard"></i> 拷贝截图</button>
+        <button id="screenshotDownloadBtn" class="action-button"><i class="fas fa-camera"></i> 下载截图</button>
+        <button id="copyHtmlBtn" class="action-button"><i class="fas fa-copy"></i> 拷贝源码</button>
+        <button id="downloadHtmlBtn" class="action-button"><i class="fas fa-download"></i> 下载报告</button>
+    </div>
+    <div id="feedback-message"></div>
+    <div id="fullscreenModal" class="modal-overlay">
+        <div class="modal-content card">
+            <button id="fullscreenCloseBtn" class="modal-close-btn" aria-label="关闭全屏">&times;</button>
+            <h2><i class="fas fa-sitemap"></i> 核心概念关系图 (全屏)</h2>
+            <div class="mindmap-controls">
+                <button id="modalZoomInBtn"><i class="fas fa-search-plus"></i> 放大</button>
+                <button id="modalZoomOutBtn"><i class="fas fa-search-minus"></i> 缩小</button>
+                <button id="modalDownloadDiagramBtn"><i class="fas fa-download"></i> 下载导图</button>
+            </div>
+            <div class="mermaid-container" id="modalMermaidContainer"></div>
+            <div id="mermaid-modal-feedback-message"></div>
+        </div>
+    </div>
+    <script>
+        // JavaScript内容保持不变
+    </script>
+</body>
+</html>
