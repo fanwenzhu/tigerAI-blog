@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【学习中】AI 智能体加强营｜行动家 群聊日报 - 2025年10月13日至14日</title>
+    <link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css">
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #f5f4ee;
+            --bg-secondary: #faf9f6;
+            --bg-tertiary: #f1f3f5;
+            --text-primary: #212529;
+            --text-secondary: #495057;
+            --accent-primary: #ff8906;
+            --accent-secondary: #f76707;
+            --accent-tertiary: #e8590c;
+            --accent-blue: #339af0;
+            --highlight-keyword-bg: #ffe8cc;
+            --highlight-name-color: #7048e8;
+            --card-padding: 24px;
+            --grid-gap: 16px;
+            --card-radius: 12px;
+            --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            --font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: var(--font-family);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            font-size: 16px;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: var(--grid-gap);
+            margin-top: 20px;
+        }
+        .card {
+            background-color: var(--bg-secondary);
+            border-radius: var(--card-radius);
+            padding: var(--card-padding);
+            box-shadow: var(--card-shadow);
+            position: relative;
+            overflow: hidden;
+        }
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: var(--accent-primary);
+        }
+        .card-icon {
+            position: absolute;
+            bottom: var(--card-padding);
+            right: var(--card-padding);
+            font-size: 4rem;
+            opacity: 0.07;
+            color: var(--accent-primary);
+            z-index: 0;
+        }
+        .main-card {
+            grid-column: span 12;
+        }
+        .topic-card {
+            grid-column: span 6;
+            min-height: 250px;
+        }
+        .topic-card:nth-last-child(1):nth-child(odd) {
+            grid-column: span 12;
+        }
+        .keyword {
+            background-color: var(--bg-tertiary);
+            color: var(--accent-primary);
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+        .highlight-keyword {
+            background-color: var(--highlight-keyword-bg);
+            padding: 1px 2px;
+            border-radius: 2px;
+            font-weight: 500;
+            display: inline;
+        }
+        .highlight-name {
+            color: var(--highlight-name-color);
+            font-weight: 500;
+        }
+        .quote {
+            position: relative;
+            padding-left: 20px;
+            margin: 10px 0;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        .quote::before {
+            content: '"';
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 1.5rem;
+            color: var(--accent-tertiary);
+        }
+        .quote-author {
+            text-align: right;
+            font-size: 0.9rem;
+            color: var(--accent-tertiary);
+            margin-top: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="report-content-wrapper">
+        <div class="grid-container">
+            <div class="card main-card">
+                <h1>【学习中】AI 智能体加强营｜行动家 群聊日报</h1>
+                <div class="date">2025年10月13日至14日</div>
+                <div class="meta-info">
+                    <span><i class="fas fa-comment"></i> 消息数: 87+</span>
+                    <span><i class="fas fa-users"></i> 活跃用户: 25+</span>
+                    <span><i class="fas fa-fire"></i> 热点话题: 6</span>
+                </div>
+                <p class="summary">
+                    过去两天群内讨论热烈，主要围绕n8n平台使用、AI编程、即梦插件等技术问题进行深入交流。多位成员分享了实战经验，特别是关于工作流调试和插件安装的问题。伟豪教练的直播预告成为关注焦点，群内技术氛围浓厚，问题解决效率高。
+                </p>
+                <i class="fas fa-microchip card-icon"></i>
+            </div>
+
+            <div class="card topic-card">
+                <h2><i class="fas fa-lightbulb"></i> n8n平台技术问题</h2>
+                <p>多位成员遇到n8n平台工作流调试问题，特别是<span class="highlight-name">@蒋先森</span>和<span class="highlight-name">@WLI</span>分享了工作流节点连接和参数设置的经验。</p>
+                <div class="topic-keywords">
+                    <span class="keyword">工作流</span>
+                    <span class="keyword">节点连接</span>
+                    <span class="keyword">参数设置</span>
+                </div>
+                <div class="topic-mentions"><i class="fas fa-bullhorn"></i> 提及次数: 18+</div>
+                <i class="fas fa-tools card-icon"></i>
+            </div>
+
+            <div class="card topic-card">
+                <h2><i class="fas fa-rocket"></i> 即梦插件调试</h2>
+                <p><span class="highlight-name">@世俗的和尚</span>和<span class="highlight-name">@订阅号</span>深入探讨了即梦文生图插件的安装和调试问题，最终找到解决方案。</p>
+                <div class="topic-keywords">
+                    <span class="keyword">即梦</span>
+                    <span class="keyword">文生图</span>
+                    <span class="keyword">API秘钥</span>
+                </div>
+                <div class="topic-mentions"><i class="fas fa-bullhorn"></i> 提及次数: 15+</div>
+                <i class="fas fa-star card-icon"></i>
+            </div>
+
+            <div class="card topic-card">
+                <h2><i class="fas fa-calendar-alt"></i> 直播预告</h2>
+                <p><span class="highlight-name">@平元—领队</span>多次提醒伟豪教练关于"抖音提取文案一键改写"的直播预告，成为群内关注焦点。</p>
+                <div class="topic-keywords">
+                    <span class="keyword">直播</span>
+                    <span class="keyword">伟豪教练</span>
+                    <span class="keyword">文案改写</span>
+                </div>
+                <div class="topic-mentions"><i class="fas fa-bullhorn"></i> 提及次数: 8+</div>
+                <i class="fas fa-broadcast-tower card-icon"></i>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-quote-left"></i> 精彩引用</h2>
+                <div class="quote">
+                    "大模型的输出类型要选array"
+                    <div class="quote-author">- @不悲不喜</div>
+                </div>
+                <div class="quote">
+                    "解决了，在Fallback Model下面添加一个大模型就行"
+                    <div class="quote-author">- @世俗的和尚</div>
+                </div>
+                <div class="quote">
+                    "你的逻辑比较复杂的时候再用吧，一般时候用不上"
+                    <div class="quote-author">- @小石学长 AI视频 深圳-教练</div>
+                </div>
+                <i class="fas fa-comment-dots card-icon"></i>
+            </div>
+
+            <div class="card">
+                <h2><i class="fas fa-chart-line"></i> 活跃之星</h2>
+                <table>
+                    <tr>
+                        <td>@世俗的和尚</td>
+                        <td>15+ 发言</td>
+                        <td>深入探讨即梦插件问题</td>
+                    </tr>
+                    <tr>
+                        <td>@平元—领队</td>
+                        <td>12+ 发言</td>
+                        <td>组织活动和发布通知</td>
+                    </tr>
+                    <tr>
+                        <td>@不悲不喜</td>
+                        <td>10+ 发言</td>
+                        <td>解答技术问题</td>
+                    </tr>
+                </table>
+                <i class="fas fa-user-friends card-icon"></i>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>数据来源：【学习中】AI 智能体加强营｜行动家 群聊记录 | 生成日期：2025年10月15日 | 统计周期：2025年10月13日至14日</p>
+            <p>由 老虎聊AI 制作 | 微信：go_home_with_you | 公众号：老虎聊AI | 专业领域：AI智能体与自动化解决方案</p>
+            <p>© 2025 老虎聊AI | 智能群聊分析工具 | 本报告由AI自动生成，仅供参考</p>
+        </div>
+    </div>
+</body>
+</html>
