@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI破局ispers Island日报 - 2025年10月15日</title>
+<link rel="stylesheet" href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/tailwindcss/2.2.19/tailwind.min.css">
+<link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-100-M/font-awesome/6.0.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoVBL5rLesXWW/sGuLhYFChxgYnz2Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<style>
+    :root {
+        --bg-primary: #f5f4ee;
+        --bg-secondary: #faf9f6;
+        --bg-tertiary: #f1f3f5;
+        --text-primary: #212529;
+        --text-secondary: #495057;
+        --accent-primary: #ff8906;
+        --accent-secondary: #f76707;
+        --accent-tertiary: #e8590c;
+        --accent-blue: #339af0;
+        --accent-purple: #7048e8;
+        --accent-cyan: #22b8cf;
+        --highlight-keyword-bg: #ffe8cc;
+        --highlight-name-color: #7048e8;
+        --card-padding: 24px;
+        --grid-gap: 16px;
+        --card-radius: 12px;
+        --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        --font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        font-family: var(--font-family);
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        line-height: 1.6;
+        font-size: 16px;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    body.modal-active {
+        overflow: hidden;
+    }
+    h1, h2, h3, h4 {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+        color: var(--accent-primary);
+    }
+    h2 {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+        color: var(--accent-primary);
+    }
+    h3 {
+        font-size: 1.25rem;
+        margin-bottom: 0.75rem;
+        color: var(--accent-blue);
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: var(--grid-gap);
+        margin-top: 20px;
+        grid-template-areas:
+            "main      main      main      main      main      main      main      main      main      main      main      main"
+            "topics    topics    topics    topics    topics    topics    topics    topics    topics    topics    topics    topics"
+            "mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap   mindmap"
+            "quote     quote     quote     quote     quote     quote     links     links     links     links     links     links"
+            "stats     stats     stats     stats     stats     stats     stats     wordcloud wordcloud wordcloud wordcloud wordcloud";
+    }
+    .card {
+        background-color: var(--bg-secondary);
+        border-radius: var(--card-radius);
+        padding: var(--card-padding);
+        box-shadow: var(--card-shadow);
+        position: relative;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: var(--accent-primary);
+    }
+    .card-icon {
+        margin-right: 10px;
+        font-size: 4rem;
+        opacity: 0.07;
+        color: var(--accent-primary);
+    }
+    .topic-cards-wrapper {
+        grid-area: topics;
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: var(--grid-gap);
+    }
+    .mindmap-card-container {
+        grid-area: mindmap;
+    }
+    .quote-card {
+        grid-area: quote;
+    }
+    .links-card {
+        grid-area: links;
+    }
+    .stats-card {
+        grid-area: stats;
+    }
+    .wordcloud-card {
+        grid-area: wordcloud;
+    }
+    .topic-card {
+        grid-column: span 6;
+        min-height: 250px;
+    }
+    .topic-card > .topic-card-content-wrapper {
+        flex-grow: 1;
+        padding-bottom: 1rem;
+    }
+    .topic-cards-wrapper .topic-card:nth-last-child(1):nth-child(odd) {
+        grid-column: span 12;
+    }
+    .mindmap-card {
+        min-height: 400px;
+    }
+    .mindmap-card h2 i {
+        margin-right: 8px;
+    }
+    .mindmap-controls {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .mindmap-controls button {
+        background-color: var(--accent-blue);
+        color: white;
+        border: none;
+        padding: 8px 12px;
+        border-radius: var(--card-radius);
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mindmap-controls button:hover {
+        background-color: #228be6;
+    }
+    .mindmap-controls .fullscreen-toggle-btn {
+        margin-left: auto;
+    }
+    .mermaid-container {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        background-color: #fff;
+        border-radius: 8px;
+        padding: 10px;
+        border: 1px solid var(--bg-tertiary);
+        min-height: 300px;
+        cursor: grab;
+    }
+    .mermaid-container.dragging {
+        cursor: grabbing;
+    }
+    .mermaid-container:empty::before {
+        content: "在此处生成或粘贴Mermaid导图代码。";
+        color: var(--text-secondary);
+        font-style: italic;
+        text-align: center;
+        padding: 20px;
+    }
+    #report-content-wrapper .footer {
+        margin-top: 30px;
+        padding-bottom: 20px;
+    }
+    .action-buttons-container {
+        text-align: center;
+        margin: 20px 0;
+        padding-bottom: 20px;
+    }
+    .action-button {
+        background-color: var(--accent-primary);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: var(--card-radius);
+        font-size: 1rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.3s
