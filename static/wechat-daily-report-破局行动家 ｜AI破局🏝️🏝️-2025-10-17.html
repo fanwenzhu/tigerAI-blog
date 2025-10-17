@@ -1,0 +1,162 @@
+# 代码实现
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>微信群聊日报</title>
+    <style>
+        :root {
+            --bg-color: #f5f4ee;
+            --text-color: #212529;
+            --highlight-color: #ff8906;
+            --card-bg-color: #faf9f6;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Inter', 'SF Pro Display', 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1rem;
+            padding: 1rem;
+        }
+        .header {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .subheader {
+            font-size: 28px;
+            margin-bottom: 1rem;
+        }
+        .card {
+            background-color: var(--card-bg-color);
+            border-radius: 5px;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            font-size: 16px;
+        }
+        .card-header {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .card-footer {
+            font-size: 14px;
+            color: #868e96;
+        }
+        .bold {
+            font-weight: bold;
+        }
+        .link {
+            color: var(--highlight-color);
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .mermaid {
+            width: 100%;
+            height: 400px;
+            margin-top: 1rem;
+        }
+        .fontawesome {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1 class="card-header">群聊总结</h1>
+            <p class="card-body">统计时间：{{统计时间}}</p>
+            <p class="card-body">消息数量：{{消息数量}}</p>
+            <p class="card-body">活跃人员数量：{{活跃人员数量}}</p>
+            <p class="card-body">热点话题数量：{{热点话题数量}}</p>
+        </div>
+        <div class="card">
+            <h1 class="card-header">今日热点</h1>
+            <ul class="card-body">
+                {% for topic in 热门话题 %}
+                <li>
+                    <strong>{{topic.name}}</strong>
+                    <p>提及次数：{{topic.count}}</p>
+                    <p>关键词提及：{{topic.keywords}}</p>
+                    <ul>
+                        {% for mention in topic.mentions %}
+                        <li>{{mention.sender}}: {{mention.message}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="card-header">核心概念关系图</h1>
+            <div class="mermaid">
+                graph TD;
+                A[{{核心概念1}}] -->|{{关系1}}| B[{{核心概念2}}];
+                B -->|{{关系2}}| C[{{核心概念3}}];
+                C -->|{{关系3}}| D[{{核心概念4}}];
+            </div>
+        </div>
+        <div class="card">
+            <h1 class="card-header">精彩引用</h1>
+            <ul class="card-body">
+                {% for quote in 精彩引用 %}
+                <li>{{quote.sender}}: {{quote.message}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="card-header">重要链接与资源</h1>
+            <ul class="card-body">
+                {% for link in 重要链接 %}
+                <li><a href="{{link.url}}" class="link">{{link.title}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="card">
+            <h1 class="card-header">活跃之星</h1>
+            <ol class="card-body">
+                {% for member in 活跃成员 %}
+                <li>
+                    <span class="bold">@{{member.sender}}</span>: {{member.count}}条消息
+                    <ul>
+                        {% for message in member.messages %}
+                        <li>{{message}}</li>
+                        {% endfor %}
+                    </ul>
+                </li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+    <footer>
+        <p>由 <span class="bold">老虎聊AI</span> 制作</p>
+        <p>版权所有 © 2025 老虎聊AI | 智能群聊分析工具</p>
+        <p>技术支持：基于 n8n + ChatlogMCP + AI 构建</p>
+        <p>微信：tigerAI2</p>
+        <p>公众号：老虎聊AI</p>
+        <p>专业领域：n8n自动化工作流解决方案</p>
+    </footer>
+    <script>
+        // 这里可以添加任何必要的JavaScript代码
+    </script>
+</body>
+</html>
