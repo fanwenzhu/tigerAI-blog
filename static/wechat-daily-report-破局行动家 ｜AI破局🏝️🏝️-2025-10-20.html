@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>破局行动家 ｜AI破局🏝️🏝️ 群聊日报</title>
+<style>
+    :root {
+        --bg-color: #f5f4ee;
+        --card-bg-color: #faf9f6;
+        --primary-color: #ff8906;
+        --text-color: #212529;
+    }
+    body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    header {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 10px 0;
+        text-align: center;
+    }
+    footer {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 10px 0;
+        text-align: center;
+    }
+    .report-header {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .report-summary {
+        margin-bottom: 40px;
+    }
+    .report-topic {
+        margin-bottom: 20px;
+    }
+    .report-quote {
+        margin-bottom: 20px;
+    }
+    .report-member {
+        margin-bottom: 20px;
+    }
+    .report-word-cloud {
+        margin-top: 40px;
+    }
+    .report-word-cloud .word {
+        display: inline-block;
+        background-color: rgba(255, 137, 6, 0.5);
+        border-radius: 5px;
+        padding: 5px 10px;
+        margin: 5px;
+        font-size: 16px;
+    }
+    .report-word-cloud .word.large {
+        font-size: 24px;
+    }
+    .report-word-cloud .word.medium {
+        font-size: 18px;
+    }
+    .report-word-cloud .word.small {
+        font-size: 14px;
+    }
+    .report-word-cloud .word.tiny {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 600px) {
+        .report-word-cloud .word {
+            font-size: 14px;
+        }
+        .report-word-cloud .word.large {
+            font-size: 20px;
+        }
+        .report-word-cloud .word.medium {
+            font-size: 16px;
+        }
+        .report-word-cloud .word.small {
+            font-size: 12px;
+        }
+        .report-word-cloud .word.tiny {
+            font-size: 10px;
+        }
+    }
+</style>
+<script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['A', 'B', 'C', 'D'],
+                datasets: [{
+                    label: '# of Messages',
+                    data: [12, 19, 3, 5],
+                    backgroundColor: [
+                        'rgba(255, 137, 6, 0.5)',
+                        'rgba(255, 137, 6, 0.5)',
+                        'rgba(255, 137, 6, 0.5)',
+                        'rgba(255, 137, 6, 0.5)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 137, 6, 1)',
+                        'rgba(255, 137, 6, 1)',
+                        'rgba(255, 137, 6, 1)',
+                        'rgba(255, 137, 6, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    });
+</script>
+</head>
+<body>
+<header>
+    <h1 class="report-header">破局行动家 ｜AI破局🏝️🏝️ 群聊日报</h1>
+    <p class="report-header">由 老虎聊AI 制作</p>
+</header>
+<div class="container">
+    <div class="report-summary">
+        <h2>群聊总结</h2>
+        <p>统计时间：2025-10-19至2025-10-20</p>
+        <p>消息数量：120</p>
+        <p>活跃人员数量：15</p>
+        <p>热点话题数量：5</p>
+    </div>
+    <div class="report-topic">
+        <h2>今日热点</h2>
+        <ul>
+            <li>
+                <span class="report-topic-title">话题1</span>
+                <p>消息数量：20</p>
+                <p>关键词提及次数：5</p>
+            </li>
+            <li>
+                <span class="report-topic-title">话题2</span>
+                <p>消息数量：15</p>
+                <p>关键词提及次数：3</p>
+            </li>
+            <li>
+                <span class="report-topic-title">话题3</span>
+                <p>消息数量：10</p>
+                <p>关键词提及次数：2</p>
+            </li>
+        </ul>
+    </div>
+    <div class="report-quote">
+        <h2>精彩引用</h2>
+        <ul>
+            <li>引用1</li>
+            <li>引用2</li>
+            <li>引用3</li>
+        </ul>
+    </div>
+    <div class="report-resource">
+        <h2>重要链接与资源</h2>
+        <ul>
+            <li><a href="http://www.example.com/resource1" target="_blank">资源1</a></li>
+            <li><a href="http://www.example.com/resource2" target="_blank">资源2</a></li>
+            <li><a href="http://www.example.com/resource3" target="_blank">资源3</a></li>
+        </ul>
+    </div>
+    <div class="report-member">
+        <h2>活跃之星</h2>
+        <ol>
+            <li>成员1</li>
+            <li>成员2</li>
+            <li>成员3</li>
+        </ol>
+    </div>
+    <div class="report-word-cloud">
+        <h2>词云</h2>
+        <div>
+            <span class="word large">关键词1</span>
+            <span class="word medium">关键词2</span>
+            <span class="word small">关键词3</span>
+            <span class="word tiny">关键词4</span>
+        </div>
+    </div>
+</div>
+<footer>
+    <p>© 2025 老虎聊AI | 智能群聊分析工具</p>
+    <p>本报告由AI自动生成，仅供参考。</p>
+    <p>作者：老虎聊AI</p>
+    <p>微信：tigerAI2</p>
+    <p>公众号：老虎聊AI</p>
+    <p>专业领域：n8n自动化工作流解决方案</p>
+</footer>
+</body>
+</html>
+请注意，此代码段包含一些静态数据，例如消息数量、活跃人员数量、热点话题数量、活跃之星等，您需要根据实际调用 `query_chat_log` 的结果填充这些数据。此外，词云部分的关键词也需要根据实际聊天记录分析得出。在实际应用中，您可能需要从服务器获取这些数据并动态填充到 HTML 中。
